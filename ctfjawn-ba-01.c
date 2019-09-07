@@ -39,7 +39,7 @@ int main() {
      */
     display_message();
 
-    printf("Calling a function if a condition is True");
+    printf("Calling a function if a condition is True..\n\n");
     if (i == (6-5)) {
         c2VjcmV0();
     }
