@@ -30,6 +30,12 @@ Commands/Tools
 
 Compile ctfjawn-ba-01.c and answer the following questions.
 
+gcc -g flag
+```
+Produce debugging information in the operating system's native format (stabs,
+COFF, XCOFF, or DWARF). GDB can work with this debugging information.
+```
+
 ```gcc -g ctfjawn-ba-01.c -o ctfjawn-ba-01```
 
 - What's the entry point address?
