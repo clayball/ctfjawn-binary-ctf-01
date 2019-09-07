@@ -1,4 +1,6 @@
-# CTFJawn, Binary Analysis Challenges 0x01
+# CTFJawn, Binary Analysis Challenges, 01
+
+!!! THIS IS A WORK IN PROGRESS !!!
 
 The challenges included in this repo were made for those new to binary
 analysis. The first few challenges will introduce you to commonly used tools
@@ -9,8 +11,12 @@ experiment.
 For each C program the required tools will be listed. Links to relevant
 resources will also be included.
 
-The main goal of these challenges is to teach you how to extract information
-from ELF (Linux) and PE (Windows) formatted binaries 
+The goals of these challenges are..
+- to teach you some of the basic techniques used to extract information from
+  ELF (Linux) and PE (Windows) formatted binaries
+- to introduce you to some of the tools used to extract information from
+  executables
+- TODO
 
 ## ctfjawn-ba-01.c
 
@@ -29,3 +35,4 @@ Compile ctfjawn-ba-01.c and answer the following questions.
 - What's the entry point address?
 - Display the contents of all ELF headers.
 - At what address does main start?
+- TODO
