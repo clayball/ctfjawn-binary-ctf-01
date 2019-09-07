@@ -2,16 +2,24 @@
 #include "libjawn.h"
 
 /*
- * ctfjawn-ba19-01.c
+ * ctfjawn-ba-01.c
  *
  * This is one of five binary challenges which are intended to teach those new
  * to the world of binary analysis.
  *
- * Level: Easy
+ * Level: 1
+ *
  * Compile.. produce debugging information in the operating system's native
  * format (stabs, COFF, XCOFF, or DWARF). GDB can work with this debugging
  * information.
- * gcc -g ctfjawn-ba-01.c
+ *
+ * $ gcc -g ctfjawn-ba-01.c -o ctfjawn-ba-01
+ *
+ * Questions:
+ * -
+ *
+ * Level: 2
+ *
  */
 
 /********* FUNCTIONS *********/

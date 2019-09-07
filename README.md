@@ -22,4 +22,10 @@ Commands/Tools
 - gcc
 - gdb
 
+Compile ctfjawn-ba-01.c and answer the following questions.
 
+```gcc -g ctfjawn-ba-01.c -o ctfjawn-ba-01```
+
+- What's the entry point address?
+- Display the contents of all ELF headers.
+- At what address does main start?
