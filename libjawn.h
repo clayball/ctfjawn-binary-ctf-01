@@ -15,5 +15,5 @@
 #endif
 
 
-const char * C2C = "10.10.66.6";
-
+const char * SECRET = "RubberDucks";
+const char * FLAG0x01 = "aHR0cDovL3d3dy5waHJhY2sub3JnL2lzc3Vlcy83LzMuaHRtbCNhcnRpY2xl";

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 #include "libjawn.h"
 
 /*
@@ -18,10 +20,20 @@ void cm9sbHdpdGhyaWNr() {
     printf("\n");
 }
 
-void c2VjcmV0 (){
-    char c2c[] = "10.100.67.7";
+void show_secret (){
     // TODO
-    printf("C2C: %s\n", C2C);
+    printf("flag0x01: %s\n", FLAG0x01);
+}
+
+void validate_guess (char *guess) {
+    char *g = guess;
+    //printf("DEBUG: g=%s, SECRET=%s\n", g, SECRET);
+    if (strcmp(g,SECRET) == 0) {
+        printf("Correct! \n");
+        show_secret();
+    } else {
+        printf("Wrong. Try again\n");
+    }
 }
 
 void display_message() {
@@ -31,18 +43,27 @@ void display_message() {
 }
 
 /********* MAIN *********/
-int main() {
+int main(int argc, char *argv[]) {
     int i = 0;
+    char * guess = argv[1];  // yeah, so?
+
     /*
-     * using gdb, run this program and set i=1 so that the function c2VjcmV0()
-     * executes
+     * using gdb, run this program and set i=1 so that the function 
+     * show_secret() executes
      */
     display_message();
 
-    printf("Calling a function if a condition is True..\n\n");
+    printf("Entered guess: %s\n", guess);
+
+    /* Two ways to trigger True statements
+     * 1. modify i using gdb
+     * 2. read memory address of the variable being compared to guess
+     */
     if (i == (6-5)) {
-        c2VjcmV0();
+        show_secret();
     }
+
+    validate_guess(guess);
 
     printf("Goodbye\n\n");
     return 0;
