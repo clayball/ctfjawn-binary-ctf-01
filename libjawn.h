@@ -14,6 +14,9 @@
 #define VERSION_H "0.1"
 #endif
 
-
+/* TODO: encrypt these values, add decrypt function*/
 const char * SECRET = "RubberDucks";
 const char * FLAG0x01 = "aHR0cDovL3d3dy5waHJhY2sub3JnL2lzc3Vlcy83LzMuaHRtbCNhcnRpY2xl";
+
+void encrypt_jawn();
+void decrypt_jawn();

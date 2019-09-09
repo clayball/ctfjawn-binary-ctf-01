@@ -63,7 +63,10 @@ int main(int argc, char *argv[]) {
         show_secret();
     }
 
-    validate_guess(guess);
+    //validate_guess(guess);
+
+    encrypt_jawn(SECRET);
+
 
     printf("Goodbye\n\n");
     return 0;
