@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "libjawn.h"
+#include "ctfjawn.h"
 
 /*
  * ctfjawn-ba-01.c
@@ -28,7 +28,7 @@ void show_secret (){
 void validate_guess (char *guess) {
     char *g = guess;
     //printf("DEBUG: g=%s, SECRET=%s\n", g, SECRET);
-    if (strcmp(g,SECRET) == 0) {
+    if (strcmp(g, SECRET) == 0) {
         printf("Correct! \n");
         show_secret();
     } else {
@@ -63,10 +63,9 @@ int main(int argc, char *argv[]) {
         show_secret();
     }
 
-    //validate_guess(guess);
+    validate_guess(guess);
 
-    encrypt_jawn(SECRET);
-
+    decrypt_jawn();
 
     printf("Goodbye\n\n");
     return 0;
