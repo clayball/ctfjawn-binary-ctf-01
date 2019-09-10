@@ -28,7 +28,10 @@ Commands/Tools
 - gcc
 - gdb
 
-Compile ctfjawn-ba-01.c and answer the following questions.
+Compile ctfjawn-ba-01.c (linking against the shared library ctfjawn.so) and
+answer the following questions. You must copy ctfjawn.so to $HOME/lib or
+wherever you'd like.. just be sure to update the command provided below with
+the proper location.
 
 gcc -g flag
 ```
@@ -36,7 +39,14 @@ Produce debugging information in the operating system's native format (stabs,
 COFF, XCOFF, or DWARF). GDB can work with this debugging information.
 ```
 
-```gcc -g ctfjawn-ba-01.c -o ctfjawn-ba-01```
+Most binaries won't include debug information. However, for whatever reason,
+malware has been seen in the wild with debug info. Perhaps used as part of a
+disinformation campaign :shrug:.
+
+```
+gcc -g -o ctfjawn-ba-01 ctfjawn-ba-01.c -L$HOME/lib -lctfjawn
+```
+
 
 - What's the entry point address?
 - Display the contents of all ELF headers.
