@@ -9,8 +9,6 @@
  * This is one of a few binary challenges which are intended to teach those new
  * to the world of binary analysis.
  *
- * gcc -g ctfjawn-ba-01.c -o ctfjawn-ba-01
- *
  */
 
 /********* FUNCTIONS *********/
@@ -28,7 +26,7 @@ void show_secret (){
 void validate_guess (char *guess) {
     char *g = guess;
     //printf("DEBUG: g=%s, SECRET=%s\n", g, SECRET);
-    if (strcmp(g, SECRET) == 0) {
+    if (strcmp(g, DEC) == 0) {
         printf("Correct! \n");
         show_secret();
     } else {
@@ -63,10 +61,10 @@ int main(int argc, char *argv[]) {
         show_secret();
     }
 
-    validate_guess(guess);
-
     /* This function is included in the libctfjawn library */
     decrypt_jawn();
+
+    validate_guess(guess);
 
     printf("Goodbye\n\n");
     return 0;
