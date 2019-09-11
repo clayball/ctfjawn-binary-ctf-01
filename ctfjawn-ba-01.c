@@ -16,12 +16,12 @@
 /********* FUNCTIONS *********/
 void cm9sbHdpdGhyaWNr() {
     char rwr[] = "just cause";
-    // TODO
-    printf("\n");
+    // The gift that keeps on giving
+    printf("aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==\n");
 }
 
 void show_secret (){
-    // TODO
+    // Show the flag
     printf("flag0x01: %s\n", FLAG0x01);
 }
 
@@ -65,6 +65,7 @@ int main(int argc, char *argv[]) {
 
     validate_guess(guess);
 
+    /* This function is included in the libctfjawn library */
     decrypt_jawn();
 
     printf("Goodbye\n\n");

@@ -47,8 +47,16 @@ disinformation campaign :shrug:.
 gcc -g -o ctfjawn-ba-01 ctfjawn-ba-01.c -L$HOME/lib -lctfjawn
 ```
 
+View the ELF program header
+
+```readelf -h ctfjawn-ba-01```
+
+Answer the following questions for the ctfjawn-ba-01 binary and the shared
+library, libctfjawn.so.
 
 - What's the entry point address?
-- Display the contents of all ELF headers.
 - At what address does main start?
-- TODO
+- Number of program headers?
+- Size of section headers?
+- Number of section headers?
+
